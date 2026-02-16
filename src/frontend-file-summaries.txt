@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main app component with TanStack Router configuration for 4 pages (Page1-4) using proper Outlet component from the router library instead of custom implementation.",
+  "frontend/src/pages/Page1.tsx": "Landing page with birthday greeting for Saniya, proposal question \"Will you marry me?\", and playful Yes/No buttons where No cycles through 8 different messages; triggers celebration effect on Yes and navigates to Page2.",
+  "frontend/src/pages/Page2.tsx": "Second page asking if boyfriend is hot/cute/sexy with Yes/Obviously options; triggers kiss effect on selection and navigates to Page3.",
+  "frontend/src/pages/Page3.tsx": "Birthday wishes page with heartfelt message ending with \"I love you so much, my ardhangani!\"; auto-navigates to Page4 after 4 seconds.",
+  "frontend/src/pages/Page4.tsx": "Final emotional page asking \"Do you really like this??\" with \"Never leave me 🥺❤️\" message and emotional emojis.",
+  "frontend/src/components/layout/RomanticLayout.tsx": "Shared layout wrapper providing consistent baby pink & white themed background with hearts pattern, gradient overlay, floating heart decorations, and footer across all pages.",
+  "frontend/src/components/effects/CelebrationOverlay.tsx": "Full-screen celebration effect overlay with 50 animated emoji particles (hearts, confetti) and centered celebration text for Page1 Yes-click transition.",
+  "frontend/src/components/effects/KissOverlay.tsx": "Full-screen kiss effect overlay with 30 animated kiss emoji particles, centered kiss text, and generated kiss icon image for Page2 transition.",
+  "frontend/src/index.css": "Global styles with baby pink & white OKLCH color system, custom romantic theme tokens, Quicksand font family, and extensive custom animations (float, fade-in, bounce, celebration, kiss effects, floating hearts).",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with romantic color tokens, Quicksand font family, and custom utilities for the baby pink & white theme.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this pure frontend experience."
+}

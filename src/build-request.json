@@ -1,0 +1,220 @@
+{
+  "kind": "build_request",
+  "title": "Saniya birthday proposal multi-page website with playful Yes/No flow and animations",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-11",
+      "text": "Create a 4-page client-side routed React experience that follows the sequence Page 1 → Page 2 → Page 3 → Page 4, with each route rendering its page correctly on direct navigation/refresh.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "make a cute front page and ask a qustion for her ... after she says yes make a celebration effect and load the second page ... load 3rd page ... load the 4th page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "App has 4 distinct routes/pages (Page 1, Page 2, Page 3, Page 4).",
+        "Navigating directly to any page route loads that page without errors.",
+        "The primary intended flow is Page 1 → Page 2 → Page 3 → Page 4 via in-app navigation."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Implement Page 1 as a cute birthday-themed landing page that includes Saniya’s name and the proposal question “Will you marry me?” with two buttons: “Yes” and “No”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "make a cute front page ... the question is will you marry me and there you prefer her 2 options yes and no"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page 1 prominently displays “Saniya” and the question text “Will you marry me?”.",
+        "Page 1 shows two interactive buttons labeled “Yes” and “No”."
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "On Page 1, implement a progressive “No” interaction: each time the user clicks “No”, the “No” label (or a nearby prompt) changes to a different escalating message (e.g., “Really?”, “Are you sure?”, etc.) and continues repeating/cycling until the user clicks “Yes”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "she will going to click on no then the no will change in really ? then again she wass clicking on no then again ask somthing different on really reapte this process until she says yes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking “No” at least 5 times produces at least 5 distinct messages over time (cycle or escalate).",
+        "“No” never advances to the next page; only “Yes” advances the flow.",
+        "The interaction remains responsive and does not break layout at varying message lengths."
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "When the user clicks “Yes” on Page 1, play a celebration effect (confetti and/or hearts) and then automatically navigate to Page 2 after a short delay.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "after she says yes make a celebration effect and load the second page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking “Yes” triggers a visible celebration animation.",
+        "After the animation starts, the app automatically navigates to Page 2 within ~0.5–2 seconds."
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Implement Page 2 with the question text: “In your point of view, your boyfriend is really hot and cute and sexy.” Provide two options: “Yes” and “Obviously”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "in second page give again a question and the second question is like this \"In your point of view your boyfriend is really hot and cute and sexy\" again put 2 option yes and obviously"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page 2 displays the specified question in polished, grammatical English while preserving the meaning.",
+        "Page 2 shows two buttons labeled exactly “Yes” and “Obviously”."
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "On Page 2, when the user selects either option (“Yes” or “Obviously”), play a kiss effect animation and then automatically navigate to Page 3 after a short delay.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "after she says yes make a kiss effect and load 3rd page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking either button triggers a visible kiss/heart-style animation.",
+        "After the animation starts, the app automatically navigates to Page 3 within ~0.5–2 seconds."
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Implement Page 3 as a birthday wishes page that shows a full birthday message and ends with the exact last line: “I love you so much, my ardhangani!”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "load 3rd page and give her birthday wish all page and last line is i lobe you so much my ardhangani !"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page 3 includes a birthday wish message addressed to Saniya.",
+        "The final line on Page 3 is exactly: “I love you so much, my ardhangani!”."
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "After Page 3 is shown, automatically navigate to Page 4 after a short delay (no user action required).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "load the 4th page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page 3 transitions automatically to Page 4 within ~2–6 seconds.",
+        "Users can still refresh on Page 4 and see it render correctly."
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "text": "Implement Page 4 as an emotional final page that asks: “Do you really like this??” and displays: “Never leave me” followed by an emotional emoji (use English user-facing text).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "load the 4th page and ask do you really like this ?? and say never leave me and emotinal emoji"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page 4 displays the question “Do you really like this??”.",
+        "Page 4 displays the message “Never leave me” with an emotional emoji.",
+        "All user-facing text is in English."
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Apply a cohesive, cute romantic birthday visual theme across all pages using a baby pink & white color palette (no blue/purple as primary), with consistent typography, spacing, and button styles.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "yes baby pink and white combination"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All pages share consistent styling (background, typography, buttons) aligned to baby pink & white.",
+        "Primary UI elements do not use blue/purple as the primary palette.",
+        "Design remains readable and visually consistent across common screen sizes."
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Add generated static images to frontend/public/assets/generated and render them in the UI (do not serve images from the backend).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Add required generated static images into the frontend and render them in the UI from frontend/public/assets/generated (do not serve generated images from the backend)."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The app includes generated images located at frontend/public/assets/generated.",
+        "At least one generated image is visibly used in the UI (e.g., background/decoration).",
+        "No backend endpoints are used to fetch or serve these images."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for any user-facing text.",
+    "Do not edit files under frontend/src/components/ui (compose them instead).",
+    "Do not edit immutable hook files: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, or frontend/src/main.tsx.",
+    "Backend must remain single-actor Motoko if any backend work is introduced (not required for this request)."
+  ],
+  "nonGoals": [
+    "Internet Identity authentication.",
+    "Persisting user progress/state on the backend.",
+    "Real-time features (WebSockets/chat).",
+    "Integrations with third-party services (music streaming, social APIs, external databases)."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Cute baby-pink heart confetti seamless background (bg-hearts-seamless.dim_1920x1080.png)",
+      "Kawaii birthday cake illustration with pastel pink accents (cake-kawaii.dim_512x512.png)",
+      "Cute kissing/love icon illustration in baby-pink style (kiss-icon.dim_512x512.png)",
+      "Small heart sparkle sticker set (hearts-stickers.dim_512x512.png)"
+    ],
+    "edits": []
+  }
+}

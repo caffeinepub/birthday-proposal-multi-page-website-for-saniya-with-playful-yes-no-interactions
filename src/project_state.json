@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 10,
+  "summary": "Build a cute multi-page birthday/proposal website for Saniya with interactive yes/no questions that progressively discourage 'No', plus celebration and kiss effects and a final birthday wish flow.",
+  "existing_features": [
+    {
+      "id": "feature-create-a-4-page-client-side-routed-react-experience-that-follows-the-sequence-page-1-page-2-page-3-page-4-with-each-route-rendering-its-page-correctly-on-direct-navigation-refresh",
+      "title": "Create a 4-page client-side routed React experience that follows the sequence Page 1 → Page 2 → Page 3 → Page 4, with each route rendering its page correctly on direct navigation/refresh.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-page-1-as-a-cute-birthday-themed-landing-page-that-includes-saniya-s-name-and-the-proposal-question-will-you-marry-me-with-two-buttons-yes-and-no",
+      "title": "Implement Page 1 as a cute birthday-themed landing page that includes Saniya’s name and the proposal question “Will you marry me?” with two buttons: “Yes” and “No”.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-on-page-1-implement-a-progressive-no-interaction-each-time-the-user-clicks-no-the-no-label-or-a-nearby-prompt-changes-to-a-different-escalating-message-e-g-really-are-you-sure-etc-and-continues-repeating-cycling-until-the-user-clicks-yes",
+      "title": "On Page 1, implement a progressive “No” interaction: each time the user clicks “No”, the “No” label (or a nearby prompt) changes to a different escalating message (e.g., “Really?”, “Are you sure?”, etc.) and continues repeating/cycling until the user clicks “Yes”.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-when-the-user-clicks-yes-on-page-1-play-a-celebration-effect-confetti-and-or-hearts-and-then-automatically-navigate-to-page-2-after-a-short-delay",
+      "title": "When the user clicks “Yes” on Page 1, play a celebration effect (confetti and/or hearts) and then automatically navigate to Page 2 after a short delay.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-page-2-with-the-question-text-in-your-point-of-view-your-boyfriend-is-really-hot-and-cute-and-sexy-provide-two-options-yes-and-obviously",
+      "title": "Implement Page 2 with the question text: “In your point of view, your boyfriend is really hot and cute and sexy.” Provide two options: “Yes” and “Obviously”.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-on-page-2-when-the-user-selects-either-option-yes-or-obviously-play-a-kiss-effect-animation-and-then-automatically-navigate-to-page-3-after-a-short-delay",
+      "title": "On Page 2, when the user selects either option (“Yes” or “Obviously”), play a kiss effect animation and then automatically navigate to Page 3 after a short delay.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-page-3-as-a-birthday-wishes-page-that-shows-a-full-birthday-message-and-ends-with-the-exact-last-line-i-love-you-so-much-my-ardhangani",
+      "title": "Implement Page 3 as a birthday wishes page that shows a full birthday message and ends with the exact last line: “I love you so much, my ardhangani!”.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-after-page-3-is-shown-automatically-navigate-to-page-4-after-a-short-delay-no-user-action-required",
+      "title": "After Page 3 is shown, automatically navigate to Page 4 after a short delay (no user action required).",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-page-4-as-an-emotional-final-page-that-asks-do-you-really-like-this-and-displays-never-leave-me-followed-by-an-emotional-emoji-use-english-user-facing-text",
+      "title": "Implement Page 4 as an emotional final page that asks: “Do you really like this??” and displays: “Never leave me” followed by an emotional emoji (use English user-facing text).",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-cute-romantic-birthday-visual-theme-across-all-pages-using-a-baby-pink-white-color-palette-no-blue-purple-as-primary-with-consistent-typography-spacing-and-button-styles",
+      "title": "Apply a cohesive, cute romantic birthday visual theme across all pages using a baby pink & white color palette (no blue/purple as primary), with consistent typography, spacing, and button styles.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-images-to-frontend-public-assets-generated-and-render-them-in-the-ui-do-not-serve-images-from-the-backend",
+      "title": "Add generated static images to frontend/public/assets/generated and render them in the UI (do not serve images from the backend).",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create cute front page for Saniya's birthday with proposal question 'Will you marry me?' and Yes/No options where clicking No repeatedly changes the prompt until she clicks Yes",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "After first Yes, trigger a celebration effect and navigate to a second page with question: \"In your point of view your boyfriend is really hot and cute and sexy\" with options Yes and Obviously",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "After second question confirmation, trigger a kiss effect and navigate to a third page showing birthday wishes and ending with the line: \"i lobe you so much my ardhangani !\"",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add a fourth page asking 'do you really like this ??' and displaying 'never leave me' with an emotional emoji",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Create a cute, birthday-themed landing page (Page 1) for Saniya that displays her name and asks the question: \"Will you marry me?\" with two buttons: \"Yes\" and \"No\".",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "On Page 1, implement a progressive \"No\" interaction: each time the user clicks \"No\", update the button label or nearby prompt text to a different message (e.g., \"Really?\", \"Are you sure?\", etc.) and continue cycling/escalating until the user clicks \"Yes\".",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "When the user clicks \"Yes\" on Page 1, play a celebration effect (confetti and/or hearts) and then automatically navigate to Page 2.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Implement Page 2 with the question text: \"In your point of view your boyfriend is really hot and cute and sexy\" and provide two options: \"Yes\" and \"Obviously\".",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "On Page 2, when the user selects either option (\"Yes\" or \"Obviously\"), play a \"kiss effect\" animation and then automatically navigate to Page 3.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Implement Page 3 as a birthday wishes page that shows a full birthday message and ends with the exact last line: \"I love you so much, my ardhangani!\"",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Implement Page 4 that asks: \"Do you really like this??\" and also displays the message: \"Never leave me\" with an emotional emoji.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Add client-side routing and a simple flow state so the experience works as a 4-page sequence (Page 1 → Page 2 → Page 3 → Page 4), including direct navigation behavior on refresh (each route renders its page).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Apply a cohesive, cute romantic birthday visual theme across all pages (consistent colors, typography, spacing, and components) without using a blue/purple primary palette.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Add required generated static images into the frontend and render them in the UI from frontend/public/assets/generated (do not serve generated images from the backend).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    }
+  ],
+  "architecturalNotes": [
+    "Design/theme preference confirmed: use a baby pink and white color combination across the website.",
+    "Confirmed name spelling is exactly: Saniya.",
+    "Confirmed copy can be slightly polished/smoothed (keep meaning/cute tone) rather than keeping the exact original wording.",
+    "Theme confirmed: baby pink + white across the website (no additional primary palettes)."
+  ],
+  "knownIssues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Cute baby-pink heart confetti seamless background (bg-hearts-seamless.dim_1920x1080.png)\n- Kawaii birthday cake illustration with pastel pink accents (cake-kawaii.dim_512x512.png)\n- Cute kissing/love icon illustration in baby-pink style (kiss-icon.dim_512x512.png)\n- Small heart sparkle sticker set (hearts-stickers.dim_512x512.png)",
+  "generatedImages": [
+    {
+      "filename": "bg-hearts-seamless.dim_1920x1080.png",
+      "description": "Cute baby-pink heart confetti seamless background",
+      "targetWidth": 1920,
+      "targetHeight": 1080
+    },
+    {
+      "filename": "cake-kawaii.dim_512x512.png",
+      "description": "Kawaii birthday cake illustration with pastel pink accents",
+      "targetWidth": 512,
+      "targetHeight": 512
+    },
+    {
+      "filename": "kiss-icon.dim_512x512.png",
+      "description": "Cute kissing/love icon illustration in baby-pink style",
+      "targetWidth": 512,
+      "targetHeight": 512
+    },
+    {
+      "filename": "hearts-stickers.dim_512x512.png",
+      "description": "Small heart sparkle sticker set",
+      "targetWidth": 512,
+      "targetHeight": 512
+    }
+  ],
+  "projectName": "Birthday proposal multi-page website for Saniya with playful Yes/No interactions and celebration/kiss effects",
+  "clarification_mode": "pro",
+  "clarification_rounds": 0,
+  "requiresBackendChanges": false,
+  "requiresFrontendChanges": true
+}

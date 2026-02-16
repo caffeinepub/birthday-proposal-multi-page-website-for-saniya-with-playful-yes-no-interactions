@@ -1,0 +1,279 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-02T19:07:38.732Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 11,
+    "implemented": 11,
+    "items": [
+      {
+        "id": "REQ-11",
+        "summary": "Create a 4-page client-side routed React experience that follows the sequence Page 1 → Page 2 → Page 3 → Page 4, with each route rendering its page correctly on direct navigation/refresh.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/pages/Page1.tsx",
+          "frontend/src/pages/Page2.tsx",
+          "frontend/src/pages/Page3.tsx",
+          "frontend/src/pages/Page4.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/pages/Page1.tsx",
+          "frontend/src/pages/Page2.tsx",
+          "frontend/src/pages/Page3.tsx",
+          "frontend/src/pages/Page4.tsx"
+        ]
+      },
+      {
+        "id": "REQ-12",
+        "summary": "Implement Page 1 as a cute birthday-themed landing page that includes Saniya’s name and the proposal question “Will you marry me?” with two buttons: “Yes” and “No”.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Page1.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Page1.tsx"
+        ]
+      },
+      {
+        "id": "REQ-13",
+        "summary": "On Page 1, implement a progressive “No” interaction: each time the user clicks “No”, the “No” label (or a nearby prompt) changes to a different escalating message (e.g., “Really?”, “Are you sure?”, etc.) and continues repeating/cycling until the user clicks “Yes”.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Page1.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Page1.tsx"
+        ]
+      },
+      {
+        "id": "REQ-14",
+        "summary": "When the user clicks “Yes” on Page 1, play a celebration effect (confetti and/or hearts) and then automatically navigate to Page 2 after a short delay.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Page1.tsx",
+          "frontend/src/components/effects/CelebrationOverlay.tsx",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Page1.tsx",
+          "frontend/src/components/effects/CelebrationOverlay.tsx",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Implement Page 2 with the question text: “In your point of view, your boyfriend is really hot and cute and sexy.” Provide two options: “Yes” and “Obviously”.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Page2.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Page2.tsx"
+        ]
+      },
+      {
+        "id": "REQ-16",
+        "summary": "On Page 2, when the user selects either option (“Yes” or “Obviously”), play a kiss effect animation and then automatically navigate to Page 3 after a short delay.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Page2.tsx",
+          "frontend/src/components/effects/KissOverlay.tsx",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Page2.tsx",
+          "frontend/src/components/effects/KissOverlay.tsx",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-17",
+        "summary": "Implement Page 3 as a birthday wishes page that shows a full birthday message and ends with the exact last line: “I love you so much, my ardhangani!”.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Page3.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Page3.tsx"
+        ]
+      },
+      {
+        "id": "REQ-18",
+        "summary": "After Page 3 is shown, automatically navigate to Page 4 after a short delay (no user action required).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Page3.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Page3.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-19",
+        "summary": "Implement Page 4 as an emotional final page that asks: “Do you really like this??” and displays: “Never leave me” followed by an emotional emoji (use English user-facing text).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Page4.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Page4.tsx"
+        ]
+      },
+      {
+        "id": "REQ-20",
+        "summary": "Apply a cohesive, cute romantic birthday visual theme across all pages using a baby pink & white color palette (no blue/purple as primary), with consistent typography, spacing, and button styles.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/components/layout/RomanticLayout.tsx",
+          "frontend/src/pages/Page1.tsx",
+          "frontend/src/pages/Page2.tsx",
+          "frontend/src/pages/Page3.tsx",
+          "frontend/src/pages/Page4.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/components/layout/RomanticLayout.tsx",
+          "frontend/src/pages/Page1.tsx",
+          "frontend/src/pages/Page2.tsx",
+          "frontend/src/pages/Page3.tsx",
+          "frontend/src/pages/Page4.tsx"
+        ]
+      },
+      {
+        "id": "REQ-21",
+        "summary": "Add generated static images to frontend/public/assets/generated and render them in the UI (do not serve images from the backend).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/bg-hearts-seamless.dim_1920x1080.png",
+          "frontend/public/assets/generated/cake-kawaii.dim_512x512.png",
+          "frontend/public/assets/generated/kiss-icon.dim_512x512.png",
+          "frontend/public/assets/generated/hearts-stickers.dim_512x512.png",
+          "frontend/src/components/layout/RomanticLayout.tsx",
+          "frontend/src/pages/Page1.tsx",
+          "frontend/src/pages/Page2.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/bg-hearts-seamless.dim_1920x1080.png",
+          "frontend/public/assets/generated/cake-kawaii.dim_512x512.png",
+          "frontend/public/assets/generated/kiss-icon.dim_512x512.png",
+          "frontend/public/assets/generated/hearts-stickers.dim_512x512.png",
+          "frontend/src/components/layout/RomanticLayout.tsx",
+          "frontend/src/pages/Page1.tsx",
+          "frontend/src/pages/Page2.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/bg-hearts-seamless.dim_1920x1080.png",
+    "frontend/public/assets/generated/cake-kawaii.dim_512x512.png",
+    "frontend/public/assets/generated/hearts-stickers.dim_512x512.png",
+    "frontend/public/assets/generated/kiss-icon.dim_512x512.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/effects/CelebrationOverlay.tsx",
+    "frontend/src/components/effects/KissOverlay.tsx",
+    "frontend/src/components/layout/RomanticLayout.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/Page1.tsx",
+    "frontend/src/pages/Page2.tsx",
+    "frontend/src/pages/Page3.tsx",
+    "frontend/src/pages/Page4.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

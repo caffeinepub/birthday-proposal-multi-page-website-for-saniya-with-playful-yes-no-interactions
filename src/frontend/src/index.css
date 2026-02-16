@@ -1,0 +1,393 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1rem;
+        
+        /* Baby pink & white romantic theme */
+        --romantic-bg: 0.98 0.02 350;
+        --romantic-bg-secondary: 0.96 0.03 340;
+        --romantic-primary: 0.55 0.15 350;
+        --romantic-accent: 0.65 0.18 345;
+        --romantic-text: 0.35 0.08 350;
+        
+        /* Standard tokens mapped to romantic theme */
+        --background: 0.98 0.02 350;
+        --foreground: 0.35 0.08 350;
+        --card: 1 0 0;
+        --card-foreground: 0.35 0.08 350;
+        --popover: 1 0 0;
+        --popover-foreground: 0.35 0.08 350;
+        --primary: 0.65 0.18 345;
+        --primary-foreground: 1 0 0;
+        --secondary: 0.96 0.03 340;
+        --secondary-foreground: 0.35 0.08 350;
+        --muted: 0.96 0.03 340;
+        --muted-foreground: 0.55 0.15 350;
+        --accent: 0.65 0.18 345;
+        --accent-foreground: 1 0 0;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 1 0 0;
+        --border: 0.90 0.05 345;
+        --input: 0.90 0.05 345;
+        --ring: 0.65 0.18 345;
+        --chart-1: 0.65 0.18 345;
+        --chart-2: 0.70 0.15 330;
+        --chart-3: 0.75 0.12 320;
+        --chart-4: 0.60 0.20 355;
+        --chart-5: 0.68 0.16 340;
+        --sidebar: 0.98 0.02 350;
+        --sidebar-foreground: 0.35 0.08 350;
+        --sidebar-primary: 0.65 0.18 345;
+        --sidebar-primary-foreground: 1 0 0;
+        --sidebar-accent: 0.96 0.03 340;
+        --sidebar-accent-foreground: 0.35 0.08 350;
+        --sidebar-border: 0.90 0.05 345;
+        --sidebar-ring: 0.65 0.18 345;
+    }
+
+    .dark {
+        --romantic-bg: 0.25 0.05 350;
+        --romantic-bg-secondary: 0.30 0.06 340;
+        --romantic-primary: 0.75 0.15 350;
+        --romantic-accent: 0.80 0.18 345;
+        --romantic-text: 0.90 0.05 350;
+        
+        --background: 0.25 0.05 350;
+        --foreground: 0.90 0.05 350;
+        --card: 0.30 0.06 340;
+        --card-foreground: 0.90 0.05 350;
+        --popover: 0.30 0.06 340;
+        --popover-foreground: 0.90 0.05 350;
+        --primary: 0.80 0.18 345;
+        --primary-foreground: 0.25 0.05 350;
+        --secondary: 0.35 0.07 340;
+        --secondary-foreground: 0.90 0.05 350;
+        --muted: 0.35 0.07 340;
+        --muted-foreground: 0.70 0.12 350;
+        --accent: 0.80 0.18 345;
+        --accent-foreground: 0.25 0.05 350;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.25 0.05 350;
+        --border: 0.40 0.08 345;
+        --input: 0.40 0.08 345;
+        --ring: 0.70 0.15 345;
+        --chart-1: 0.80 0.18 345;
+        --chart-2: 0.75 0.15 330;
+        --chart-3: 0.70 0.12 320;
+        --chart-4: 0.85 0.20 355;
+        --chart-5: 0.78 0.16 340;
+        --sidebar: 0.30 0.06 340;
+        --sidebar-foreground: 0.90 0.05 350;
+        --sidebar-primary: 0.80 0.18 345;
+        --sidebar-primary-foreground: 0.25 0.05 350;
+        --sidebar-accent: 0.35 0.07 340;
+        --sidebar-accent-foreground: 0.90 0.05 350;
+        --sidebar-border: 0.40 0.08 345;
+        --sidebar-ring: 0.70 0.15 345;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Quicksand', 'Comic Sans MS', cursive, system-ui, -apple-system, sans-serif;
+    }
+}
+
+@layer utilities {
+    /* Romantic theme utilities */
+    .text-romantic-primary {
+        color: oklch(var(--romantic-primary));
+    }
+    
+    .text-romantic-accent {
+        color: oklch(var(--romantic-accent));
+    }
+    
+    .bg-romantic-bg {
+        background-color: oklch(var(--romantic-bg));
+    }
+    
+    .bg-romantic-bg-secondary {
+        background-color: oklch(var(--romantic-bg-secondary));
+    }
+    
+    .bg-romantic-primary {
+        background-color: oklch(var(--romantic-primary));
+    }
+    
+    .bg-romantic-accent {
+        background-color: oklch(var(--romantic-accent));
+    }
+    
+    .border-romantic-primary {
+        border-color: oklch(var(--romantic-primary));
+    }
+    
+    .border-romantic-accent {
+        border-color: oklch(var(--romantic-accent));
+    }
+
+    /* Custom animations */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes float-delay {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fade-in-delay {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        30% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fade-in-delay-2 {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fade-in-delay-3 {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        70% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes bounce-slow {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes bounce-delay {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes celebration-particle {
+        0% {
+            opacity: 0;
+            transform: translateY(100vh) scale(0) rotate(0deg);
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-100vh) scale(1.5) rotate(720deg);
+        }
+    }
+
+    @keyframes celebration-scale {
+        0% {
+            transform: scale(0) rotate(0deg);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.5) rotate(180deg);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1) rotate(360deg);
+            opacity: 1;
+        }
+    }
+
+    @keyframes kiss-particle {
+        0% {
+            opacity: 0;
+            transform: scale(0) translateY(0);
+        }
+        20% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: scale(2) translateY(-50vh);
+        }
+    }
+
+    @keyframes kiss-scale {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.3);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes kiss-bounce {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+    }
+
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-float-delay {
+        animation: float-delay 3s ease-in-out infinite;
+        animation-delay: 0.5s;
+    }
+
+    .animate-fade-in {
+        animation: fade-in 0.8s ease-out forwards;
+    }
+
+    .animate-fade-in-delay {
+        animation: fade-in-delay 1.5s ease-out forwards;
+    }
+
+    .animate-fade-in-delay-2 {
+        animation: fade-in-delay-2 2s ease-out forwards;
+    }
+
+    .animate-fade-in-delay-3 {
+        animation: fade-in-delay-3 2.5s ease-out forwards;
+    }
+
+    .animate-bounce-slow {
+        animation: bounce-slow 2s ease-in-out infinite;
+    }
+
+    .animate-bounce-delay {
+        animation: bounce-delay 2s ease-in-out infinite;
+        animation-delay: 0.3s;
+    }
+
+    .animate-celebration-particle {
+        animation: celebration-particle 2s ease-out forwards;
+    }
+
+    .animate-celebration-scale {
+        animation: celebration-scale 1s ease-out forwards;
+    }
+
+    .animate-kiss-particle {
+        animation: kiss-particle 2s ease-out forwards;
+    }
+
+    .animate-kiss-scale {
+        animation: kiss-scale 1s ease-out forwards;
+    }
+
+    .animate-kiss-bounce {
+        animation: kiss-bounce 1.5s ease-in-out infinite;
+    }
+
+    /* Floating hearts background decoration */
+    .heart-float {
+        position: absolute;
+        font-size: 2rem;
+        opacity: 0.15;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .heart-1 {
+        top: 10%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .heart-2 {
+        top: 20%;
+        right: 15%;
+        animation-delay: 1s;
+    }
+
+    .heart-3 {
+        bottom: 15%;
+        left: 20%;
+        animation-delay: 2s;
+    }
+
+    .heart-4 {
+        bottom: 25%;
+        right: 10%;
+        animation-delay: 3s;
+    }
+
+    .heart-5 {
+        top: 50%;
+        left: 50%;
+        animation-delay: 4s;
+    }
+}

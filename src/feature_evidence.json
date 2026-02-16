@@ -1,0 +1,208 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-4-page-client-side-routed-react-experience-that-follows-the-sequence-page-1-page-2-page-3-page-4-with-each-route-rendering-its-page-correctly-on-direct-navigation-refresh",
+      "featureTitle": "Create a 4-page client-side routed React experience that follows the sequence Page 1 → Page 2 → Page 3 → Page 4, with each route rendering its page correctly on direct navigation/refresh.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Page1.tsx",
+        "frontend/src/pages/Page2.tsx",
+        "frontend/src/pages/Page3.tsx",
+        "frontend/src/pages/Page4.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-page-1-as-a-cute-birthday-themed-landing-page-that-includes-saniya-s-name-and-the-proposal-question-will-you-marry-me-with-two-buttons-yes-and-no",
+      "featureTitle": "Implement Page 1 as a cute birthday-themed landing page that includes Saniya’s name and the proposal question “Will you marry me?” with two buttons: “Yes” and “No”.",
+      "files": [
+        "frontend/src/pages/Page1.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-on-page-1-implement-a-progressive-no-interaction-each-time-the-user-clicks-no-the-no-label-or-a-nearby-prompt-changes-to-a-different-escalating-message-e-g-really-are-you-sure-etc-and-continues-repeating-cycling-until-the-user-clicks-yes",
+      "featureTitle": "On Page 1, implement a progressive “No” interaction: each time the user clicks “No”, the “No” label (or a nearby prompt) changes to a different escalating message (e.g., “Really?”, “Are you sure?”, etc.) and continues repeating/cycling until the user clicks “Yes”.",
+      "files": [
+        "frontend/src/pages/Page1.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-when-the-user-clicks-yes-on-page-1-play-a-celebration-effect-confetti-and-or-hearts-and-then-automatically-navigate-to-page-2-after-a-short-delay",
+      "featureTitle": "When the user clicks “Yes” on Page 1, play a celebration effect (confetti and/or hearts) and then automatically navigate to Page 2 after a short delay.",
+      "files": [
+        "frontend/src/components/effects/CelebrationOverlay.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/Page1.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-page-2-with-the-question-text-in-your-point-of-view-your-boyfriend-is-really-hot-and-cute-and-sexy-provide-two-options-yes-and-obviously",
+      "featureTitle": "Implement Page 2 with the question text: “In your point of view, your boyfriend is really hot and cute and sexy.” Provide two options: “Yes” and “Obviously”.",
+      "files": [
+        "frontend/src/pages/Page2.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-on-page-2-when-the-user-selects-either-option-yes-or-obviously-play-a-kiss-effect-animation-and-then-automatically-navigate-to-page-3-after-a-short-delay",
+      "featureTitle": "On Page 2, when the user selects either option (“Yes” or “Obviously”), play a kiss effect animation and then automatically navigate to Page 3 after a short delay.",
+      "files": [
+        "frontend/src/components/effects/KissOverlay.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/Page2.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-page-3-as-a-birthday-wishes-page-that-shows-a-full-birthday-message-and-ends-with-the-exact-last-line-i-love-you-so-much-my-ardhangani",
+      "featureTitle": "Implement Page 3 as a birthday wishes page that shows a full birthday message and ends with the exact last line: “I love you so much, my ardhangani!”.",
+      "files": [
+        "frontend/src/pages/Page3.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-after-page-3-is-shown-automatically-navigate-to-page-4-after-a-short-delay-no-user-action-required",
+      "featureTitle": "After Page 3 is shown, automatically navigate to Page 4 after a short delay (no user action required).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Page3.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-page-4-as-an-emotional-final-page-that-asks-do-you-really-like-this-and-displays-never-leave-me-followed-by-an-emotional-emoji-use-english-user-facing-text",
+      "featureTitle": "Implement Page 4 as an emotional final page that asks: “Do you really like this??” and displays: “Never leave me” followed by an emotional emoji (use English user-facing text).",
+      "files": [
+        "frontend/src/pages/Page4.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-cohesive-cute-romantic-birthday-visual-theme-across-all-pages-using-a-baby-pink-white-color-palette-no-blue-purple-as-primary-with-consistent-typography-spacing-and-button-styles",
+      "featureTitle": "Apply a cohesive, cute romantic birthday visual theme across all pages using a baby pink & white color palette (no blue/purple as primary), with consistent typography, spacing, and button styles.",
+      "files": [
+        "frontend/src/components/layout/RomanticLayout.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/Page1.tsx",
+        "frontend/src/pages/Page2.tsx",
+        "frontend/src/pages/Page3.tsx",
+        "frontend/src/pages/Page4.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-generated-static-images-to-frontend-public-assets-generated-and-render-them-in-the-ui-do-not-serve-images-from-the-backend",
+      "featureTitle": "Add generated static images to frontend/public/assets/generated and render them in the UI (do not serve images from the backend).",
+      "files": [
+        "frontend/src/components/layout/RomanticLayout.tsx",
+        "frontend/src/pages/Page1.tsx",
+        "frontend/src/pages/Page2.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-21"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

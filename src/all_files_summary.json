@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Minimal Motoko canister entry point defining an empty actor with no methods.",
+  "feature_evidence.json": "Machine-readable report listing implemented frontend features, their related files, dependencies, test IDs, and confidence levels.",
+  "frontend-file-summaries.txt": "Prewritten high-level summaries of frontend source files describing routing, pages, layouts, effects, and styling.",
+  "frontend/index.css": "Global Tailwind CSS entry defining extensive OKLCH-based design tokens, light/dark themes, and base styles.",
+  "frontend/index.html": "HTML entry point mounting the React app with metadata and script reference to the main bundle.",
+  "frontend/src/App.tsx": "Main React application configuring TanStack Router with four client-side routes (Page1–Page4) and a root outlet.",
+  "frontend/src/components/effects/CelebrationOverlay.tsx": "Full-screen celebratory overlay rendering animated heart and confetti emoji particles with a central celebration icon.",
+  "frontend/src/components/effects/KissOverlay.tsx": "Full-screen kiss animation overlay with floating kiss emojis and a centered kiss icon image.",
+  "frontend/src/components/layout/RomanticLayout.tsx": "Shared layout component providing romantic themed background, floating heart decorations, gradient overlay, and footer.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and caches a DFINITY backend actor using React Query, updating when identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Authentication context and hooks for managing Internet Identity login state using DFINITY AuthClient.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder hook file indicating no backend queries are required for this frontend-only app.",
+  "frontend/src/index.css": "Defines Tailwind base/components/utilities and a custom romantic theme using CSS variables with light and dark modes, plus utility classes and base styling for fonts, colors, and backgrounds.",
+  "frontend/src/main.tsx": "Application entry point that creates the React root, sets up React Query and Internet Identity providers, and renders the main App with global styles.",
+  "frontend/src/pages/Page1.tsx": "First interactive landing page showing a birthday/proposal message with Yes/No buttons, progressive No text changes, celebration effect on Yes, and navigation to Page 2.",
+  "frontend/src/pages/Page2.tsx": "Second page asking a playful question with two affirmative options that trigger a kiss animation and then navigate to Page 3.",
+  "frontend/src/pages/Page3.tsx": "Birthday wishes page displaying a heartfelt message with animations and automatically navigating to Page 4 after a delay.",
+  "frontend/src/pages/Page4.tsx": "Final emotional page asking for affirmation and displaying romantic messages and animations without further navigation.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration enabling dark mode, plugins, content scanning, and extensive theme extensions mapping CSS variables to a romantic color palette, fonts, animations, and layout settings.",
+  "project_state.json": "Project metadata describing the app’s purpose, schema version, and a list of implemented features outlining the four-page romantic birthday/proposal flow."
+}

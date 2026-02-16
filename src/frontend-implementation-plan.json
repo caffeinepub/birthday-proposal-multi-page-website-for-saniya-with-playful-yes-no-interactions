@@ -1,0 +1,277 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Saniya birthday proposal 4-page React flow with cute theme and animations",
+  "requirements": [
+    {
+      "id": "REQ-11",
+      "summary": "Create 4 client-side routes (Page 1 → 2 → 3 → 4) that render correctly on direct navigation/refresh.",
+      "acceptanceCriteria": [
+        "App has 4 distinct routes/pages (Page 1, Page 2, Page 3, Page 4).",
+        "Navigating directly to any page route loads that page without errors.",
+        "The primary intended flow is Page 1 → Page 2 → Page 3 → Page 4 via in-app navigation."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Implement React Router configuration with 4 routes (Page 1–4) and ensure each route renders on refresh/direct navigation."
+        },
+        {
+          "path": "frontend/src/pages/Page1.tsx",
+          "operation": "create",
+          "description": "Create Page 1 route component and ensure it is reachable via the router."
+        },
+        {
+          "path": "frontend/src/pages/Page2.tsx",
+          "operation": "create",
+          "description": "Create Page 2 route component and ensure it is reachable via the router."
+        },
+        {
+          "path": "frontend/src/pages/Page3.tsx",
+          "operation": "create",
+          "description": "Create Page 3 route component and ensure it is reachable via the router."
+        },
+        {
+          "path": "frontend/src/pages/Page4.tsx",
+          "operation": "create",
+          "description": "Create Page 4 route component and ensure it is reachable via the router."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Implement Page 1 landing page with Saniya’s name, the proposal question, and Yes/No buttons.",
+      "acceptanceCriteria": [
+        "Page 1 prominently displays “Saniya” and the question text “Will you marry me?”.",
+        "Page 1 shows two interactive buttons labeled “Yes” and “No”."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Page1.tsx",
+          "operation": "modify",
+          "description": "Add cute birthday-themed layout including “Saniya”, the exact question “Will you marry me?”, and two buttons labeled “Yes” and “No”."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Add progressive “No” interaction on Page 1 with escalating/cycling messages on repeated clicks.",
+      "acceptanceCriteria": [
+        "Clicking “No” at least 5 times produces at least 5 distinct messages over time (cycle or escalate).",
+        "“No” never advances to the next page; only “Yes” advances the flow.",
+        "The interaction remains responsive and does not break layout at varying message lengths."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Page1.tsx",
+          "operation": "modify",
+          "description": "Implement state-driven progressive “No” behavior (at least 5 distinct messages, cycling/escalating) that never triggers navigation and remains layout-safe for longer strings."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "On Page 1 “Yes”, play a visible celebration effect then auto-navigate to Page 2 after a short delay.",
+      "acceptanceCriteria": [
+        "Clicking “Yes” triggers a visible celebration animation.",
+        "After the animation starts, the app automatically navigates to Page 2 within ~0.5–2 seconds."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Page1.tsx",
+          "operation": "modify",
+          "description": "Trigger celebration overlay/animation on “Yes” click, then navigate to Page 2 after a short delay (0.5–2s)."
+        },
+        {
+          "path": "frontend/src/components/effects/CelebrationOverlay.tsx",
+          "operation": "create",
+          "description": "Create a reusable celebration effect component (confetti/hearts-style) suitable for Page 1 transitions."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add required CSS keyframes/utilities for the celebration effect animation used by CelebrationOverlay."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Implement Page 2 with the specified boyfriend compliment question and “Yes”/“Obviously” options.",
+      "acceptanceCriteria": [
+        "Page 2 displays the specified question in polished, grammatical English while preserving the meaning.",
+        "Page 2 shows two buttons labeled exactly “Yes” and “Obviously”."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Page2.tsx",
+          "operation": "modify",
+          "description": "Render Page 2 question in polished grammatical English preserving meaning, and show two buttons labeled exactly “Yes” and “Obviously”."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "On Page 2 selection, play a kiss effect then auto-navigate to Page 3 after a short delay.",
+      "acceptanceCriteria": [
+        "Clicking either button triggers a visible kiss/heart-style animation.",
+        "After the animation starts, the app automatically navigates to Page 3 within ~0.5–2 seconds."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Page2.tsx",
+          "operation": "modify",
+          "description": "On either selection (“Yes” or “Obviously”), trigger a kiss/heart effect animation and auto-navigate to Page 3 after a short delay (0.5–2s)."
+        },
+        {
+          "path": "frontend/src/components/effects/KissOverlay.tsx",
+          "operation": "create",
+          "description": "Create a reusable kiss/heart-style effect component suitable for Page 2 transitions."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add/extend CSS keyframes/utilities needed for the kiss/heart-style animation used by KissOverlay."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Implement Page 3 birthday wishes message ending with the exact required final line.",
+      "acceptanceCriteria": [
+        "Page 3 includes a birthday wish message addressed to Saniya.",
+        "The final line on Page 3 is exactly: “I love you so much, my ardhangani!”."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Page3.tsx",
+          "operation": "modify",
+          "description": "Add a full birthday wish message addressed to Saniya and ensure the last line is exactly: “I love you so much, my ardhangani!”."
+        }
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "summary": "Auto-navigate from Page 3 to Page 4 after a short delay without user action.",
+      "acceptanceCriteria": [
+        "Page 3 transitions automatically to Page 4 within ~2–6 seconds.",
+        "Users can still refresh on Page 4 and see it render correctly."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Page3.tsx",
+          "operation": "modify",
+          "description": "Add timer-based automatic navigation to Page 4 within ~2–6 seconds after Page 3 renders (no user action required)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure Page 4 route is registered so refresh/direct navigation to Page 4 continues to render correctly."
+        }
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "summary": "Implement Page 4 final emotional page with specified English text and an emotional emoji.",
+      "acceptanceCriteria": [
+        "Page 4 displays the question “Do you really like this??”.",
+        "Page 4 displays the message “Never leave me” with an emotional emoji.",
+        "All user-facing text is in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Page4.tsx",
+          "operation": "modify",
+          "description": "Render Page 4 with the exact question “Do you really like this??” and the message “Never leave me” followed by an emotional emoji, keeping all user-facing text in English."
+        }
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "summary": "Apply cohesive baby pink & white romantic birthday theme across all pages with consistent typography/spacing/buttons and no blue/purple as primary palette.",
+      "acceptanceCriteria": [
+        "All pages share consistent styling (background, typography, buttons) aligned to baby pink & white.",
+        "Primary UI elements do not use blue/purple as the primary palette.",
+        "Design remains readable and visually consistent across common screen sizes."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define global theme tokens (CSS variables) and base styles for baby pink & white palette, typography, spacing, and shared button styling; avoid blue/purple as primary."
+        },
+        {
+          "path": "frontend/src/components/layout/RomanticLayout.tsx",
+          "operation": "create",
+          "description": "Create a shared layout wrapper to enforce consistent page structure, spacing, and theming across all pages."
+        },
+        {
+          "path": "frontend/src/pages/Page1.tsx",
+          "operation": "modify",
+          "description": "Wrap Page 1 content in the shared RomanticLayout to ensure consistent theme, spacing, and button styling across the app."
+        },
+        {
+          "path": "frontend/src/pages/Page2.tsx",
+          "operation": "modify",
+          "description": "Wrap Page 2 content in the shared RomanticLayout to ensure consistent theme, spacing, and button styling across the app."
+        },
+        {
+          "path": "frontend/src/pages/Page3.tsx",
+          "operation": "modify",
+          "description": "Wrap Page 3 content in the shared RomanticLayout to ensure consistent theme, spacing, and button styling across the app."
+        },
+        {
+          "path": "frontend/src/pages/Page4.tsx",
+          "operation": "modify",
+          "description": "Wrap Page 4 content in the shared RomanticLayout to ensure consistent theme, spacing, and button styling across the app."
+        }
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "summary": "Add required generated static images under frontend/public/assets/generated and render at least one in the UI (no backend image serving).",
+      "acceptanceCriteria": [
+        "The app includes generated images located at frontend/public/assets/generated.",
+        "At least one generated image is visibly used in the UI (e.g., background/decoration).",
+        "No backend endpoints are used to fetch or serve these images."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/bg-hearts-seamless.dim_1920x1080.png",
+          "operation": "create",
+          "description": "Add generated static image asset: frontend/public/assets/generated/bg-hearts-seamless.dim_1920x1080.png."
+        },
+        {
+          "path": "frontend/public/assets/generated/cake-kawaii.dim_512x512.png",
+          "operation": "create",
+          "description": "Add generated static image asset: frontend/public/assets/generated/cake-kawaii.dim_512x512.png."
+        },
+        {
+          "path": "frontend/public/assets/generated/kiss-icon.dim_512x512.png",
+          "operation": "create",
+          "description": "Add generated static image asset: frontend/public/assets/generated/kiss-icon.dim_512x512.png."
+        },
+        {
+          "path": "frontend/public/assets/generated/hearts-stickers.dim_512x512.png",
+          "operation": "create",
+          "description": "Add generated static image asset: frontend/public/assets/generated/hearts-stickers.dim_512x512.png."
+        },
+        {
+          "path": "frontend/src/components/layout/RomanticLayout.tsx",
+          "operation": "modify",
+          "description": "Render a decorative/generated background or inline decoration using frontend/public/assets/generated/bg-hearts-seamless.dim_1920x1080.png and optionally other generated stickers/icons to ensure at least one generated image is visibly used in the UI."
+        },
+        {
+          "path": "frontend/src/pages/Page1.tsx",
+          "operation": "modify",
+          "description": "Display at least one generated decoration image (e.g., frontend/public/assets/generated/cake-kawaii.dim_512x512.png and/or frontend/public/assets/generated/hearts-stickers.dim_512x512.png) as part of the Page 1 UI."
+        },
+        {
+          "path": "frontend/src/pages/Page2.tsx",
+          "operation": "modify",
+          "description": "Optionally reinforce the kiss effect/visuals by displaying frontend/public/assets/generated/kiss-icon.dim_512x512.png on Page 2 (static decoration), without any backend image serving."
+        }
+      ]
+    }
+  ]
+}
